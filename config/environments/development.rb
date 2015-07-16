@@ -41,4 +41,6 @@ Rails.application.configure do
 
   #This is required to properly generate links inside the e-mail views.
   config.action_mailer.default_url_options = { host: '127.0.0.1', port: 3000 }
+
+  config.action_mailer.perform_deliveries = true
 end
